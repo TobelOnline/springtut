@@ -10,7 +10,7 @@ public class TrackCoach implements Coach {
 		fortuneService = theFortuneService;
 	}
 	
-	// Default constructor hallo
+	// Default constructor Commit 2
 	public TrackCoach() {
 		super();
 	}
@@ -27,5 +27,16 @@ public class TrackCoach implements Coach {
 		return fortuneService.getFortune();
 	}
 
-
+	// add an init method (custom hook)
+	public void doMyStartupStuff () {
+		System.out.println("TrackCoach: inside method: doMyStartupStuff");
+	}
+	
+	
+	// add a destroy method (custom hook)
+	public void doMyCleanupStuff() {
+		System.out.println("TrackCoach: inside method: doMyCleanupStuff");
+		
+	}
+	
 }
